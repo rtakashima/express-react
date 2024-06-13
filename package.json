@@ -1,0 +1,62 @@
+{
+  "name": "santa-app",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "main": "server.js",
+  "scripts": {
+    "start:vite": "vite --port 3000",
+    "start:react": "react-scripts start",
+    "start": "node -r dotenv/config server.js",
+    "dev": "webpack --mode development && node -r dotenv/config server.js",
+    "build": "webpack --mode production",
+    "build:start": "webpack --mode production && node -r dotenv/config server.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^3.1.0",
+    "axios": "^1.7.2",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^4.1.6",
+    "vite": "^4.2.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://github.com/alj-devops/santa-app"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
